@@ -37,7 +37,7 @@ public class GridGenerator : MonoBehaviour
             for (int y = 0; y < height; y++)
             {
                 float posX = (x * blockSize) - xOffset + (blockSize / 2f);
-                float posY = -y * blockSize;
+                float posY = y * blockSize;
 
                 Vector3 spawnPos = new Vector3(posX, posY, 0);
                 GameObject prefabToSpawn = SelectBlockByDepth(y);
